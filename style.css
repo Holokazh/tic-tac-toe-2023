@@ -16,11 +16,16 @@ body {
     align-items: center;
 }
 
+#player-win {
+    height: 20px;
+}
+
 .container-block {
     width: 300px;
     height: 300px;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .block {
@@ -29,6 +34,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 400;
+    font-size: 1.5em;
 }
 
 #block-2, #block-5, #block-8 {
@@ -39,4 +46,33 @@ body {
 #block-4, #block-5, #block-6 {
     border-top: 1px solid #222;
     border-bottom: 1px solid #222;
+}
+
+#restart-button {
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 5px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+#lineWin {
+    width: 100%;
+    height: 5px;
+    display: block;
+    border-radius: 5px;
+    position: absolute;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1c1c1e;
+        color: #fefefe;
+    }
+    .block {
+        border-color: #fefefe !important;
+    }
 }

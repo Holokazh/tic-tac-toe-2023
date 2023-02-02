@@ -13,6 +13,10 @@
 </head>
 <body>
     <section class="container">
+        <div id="nb-turn"></div>
+
+        <div id="player-win"></div>
+
         <section class="container-block">
             <div class="block" id="block-1"></div>
             <div class="block" id="block-2"></div>
@@ -23,9 +27,10 @@
             <div class="block" id="block-7"></div>
             <div class="block" id="block-8"></div>
             <div class="block" id="block-9"></div>
+            <span id="lineWin" style="display: none;"></span>
         </section>
     
-        <button id="restart-button" onclick="resetGame()">recommencer</button>
+        <button id="restart-button" onclick="resetGame()">restart</button>
     </section>
 </body>
 </html>
